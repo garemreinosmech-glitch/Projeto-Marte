@@ -18,20 +18,26 @@ window.PESQUISA_MARTE = [
     responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
     topicos: [
       {
-        titulo: "Gravidade e movimento",
-        texto: `[COLE AQUI O TEXTO SOBRE GRAVIDADE E MOVIMENTO EM MARTE.]`,
+        titulo: "Gravidade",
+        texto: `[COLE AQUI O TEXTO SOBRE A GRAVIDADE EM MARTE.]`,
         imagem: "",
         legenda: ""
       },
       {
-        titulo: "Radiação e proteção",
-        texto: `[COLE AQUI O TEXTO SOBRE RADIAÇÃO E FORMAS DE PROTEÇÃO.]`,
+        titulo: "Radiação",
+        texto: `[COLE AQUI O TEXTO SOBRE A RADIAÇÃO EM MARTE E AS FORMAS DE PROTEÇÃO.]`,
         imagem: "",
         legenda: ""
       },
       {
-        titulo: "Propulsão e energia",
-        texto: `[COLE AQUI O TEXTO SOBRE PROPULSÃO, ENERGIA SOLAR E ENERGIA NUCLEAR.]`,
+        titulo: "Propulsão",
+        texto: `[COLE AQUI O TEXTO SOBRE PROPULSÃO E DESLOCAMENTO EM MARTE.]`,
+        imagem: "",
+        legenda: ""
+      },
+      {
+        titulo: "Energia",
+        texto: `[COLE AQUI O TEXTO SOBRE GERAÇÃO E UTILIZAÇÃO DE ENERGIA EM MARTE.]`,
         imagem: "",
         legenda: ""
       }
@@ -43,18 +49,24 @@ window.PESQUISA_MARTE = [
     numero: "02",
     nome: "Matemática",
     icone: "△",
-    resumo: "Escalas, modelagem, estatística e planejamento da colônia.",
+    resumo: "Escalas, estatísticas e modelagem aplicadas ao planejamento da colônia.",
     responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
     topicos: [
       {
-        titulo: "Modelos e cálculos",
-        texto: `[COLE AQUI O TEXTO DE MATEMÁTICA.]`,
+        titulo: "Escalas",
+        texto: `[COLE AQUI O TEXTO SOBRE ESCALAS APLICADAS À COLONIZAÇÃO DE MARTE.]`,
         imagem: "",
         legenda: ""
       },
       {
-        titulo: "Dados e planejamento",
-        texto: `[COLE AQUI GRÁFICOS, ESTIMATIVAS, ESCALAS OU OUTROS CÁLCULOS.]`,
+        titulo: "Estatísticas",
+        texto: `[COLE AQUI O TEXTO, OS DADOS E OS GRÁFICOS ESTATÍSTICOS.]`,
+        imagem: "",
+        legenda: ""
+      },
+      {
+        titulo: "Modelagem",
+        texto: `[COLE AQUI O TEXTO SOBRE MODELAGEM MATEMÁTICA E PLANEJAMENTO.]`,
         imagem: "",
         legenda: ""
       }
@@ -66,18 +78,24 @@ window.PESQUISA_MARTE = [
     numero: "03",
     nome: "Química",
     icone: "⬡",
-    resumo: "Atmosfera, recursos locais, combustíveis e transformações químicas.",
+    resumo: "Produção de oxigênio, combustíveis e materiais para a colônia.",
     responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
     topicos: [
       {
-        titulo: "Atmosfera marciana",
-        texto: `[COLE AQUI O TEXTO SOBRE A COMPOSIÇÃO E AS CARACTERÍSTICAS DA ATMOSFERA.]`,
+        titulo: "Produção de oxigênio",
+        texto: `[COLE AQUI O TEXTO SOBRE OS PROCESSOS QUÍMICOS PARA PRODUZIR OXIGÊNIO EM MARTE.]`,
         imagem: "",
         legenda: ""
       },
       {
-        titulo: "Recursos e reações",
-        texto: `[COLE AQUI O TEXTO SOBRE OBTENÇÃO DE ÁGUA, OXIGÊNIO, COMBUSTÍVEIS OU OUTROS RECURSOS.]`,
+        titulo: "Combustíveis",
+        texto: `[COLE AQUI O TEXTO SOBRE PRODUÇÃO, ARMAZENAMENTO E USO DE COMBUSTÍVEIS.]`,
+        imagem: "",
+        legenda: ""
+      },
+      {
+        titulo: "Materiais",
+        texto: `[COLE AQUI O TEXTO SOBRE MATERIAIS ADEQUADOS PARA CONSTRUÇÃO E PROTEÇÃO EM MARTE.]`,
         imagem: "",
         legenda: ""
       }
@@ -89,68 +107,28 @@ window.PESQUISA_MARTE = [
     numero: "04",
     nome: "Biologia",
     icone: "✣",
-    resumo: "Saúde humana, alimentação, adaptação e cultivo de organismos.",
+    resumo: "Plantas, genética e micro-organismos em um ambiente marciano.",
     responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
     topicos: [
       {
-        titulo: "O corpo humano em Marte",
-        texto: `[COLE AQUI O TEXTO SOBRE SAÚDE, BAIXA GRAVIDADE E ADAPTAÇÃO BIOLÓGICA.]`,
+        titulo: "Plantas",
+        texto: `[COLE AQUI O TEXTO SOBRE CULTIVO, ALIMENTAÇÃO E DESENVOLVIMENTO DE PLANTAS EM MARTE.]`,
         imagem: "",
         legenda: ""
       },
       {
-        titulo: "Alimentação e cultivo",
-        texto: `[COLE AQUI O TEXTO SOBRE PRODUÇÃO DE ALIMENTOS E SISTEMAS BIOLÓGICOS.]`,
+        titulo: "Genética",
+        texto: `[COLE AQUI O TEXTO SOBRE GENÉTICA E ADAPTAÇÃO DOS SERES VIVOS ÀS CONDIÇÕES MARCIANAS.]`,
+        imagem: "",
+        legenda: ""
+      },
+      {
+        titulo: "Micro-organismos",
+        texto: `[COLE AQUI O TEXTO SOBRE O PAPEL E O CONTROLE DE MICRO-ORGANISMOS NA COLÔNIA.]`,
         imagem: "",
         legenda: ""
       }
     ],
     referencias: ["[ADICIONE AQUI AS REFERÊNCIAS DE BIOLOGIA]"]
-  },
-  {
-    id: "geografia",
-    numero: "05",
-    nome: "Geografia",
-    icone: "◎",
-    resumo: "Território, relevo, clima e escolha do local da colônia.",
-    responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
-    topicos: [
-      {
-        titulo: "Relevo e clima",
-        texto: `[COLE AQUI O TEXTO SOBRE AS REGIÕES, O RELEVO E O CLIMA DE MARTE.]`,
-        imagem: "",
-        legenda: ""
-      },
-      {
-        titulo: "Localização da colônia",
-        texto: `[COLE AQUI A ANÁLISE SOBRE O MELHOR LOCAL PARA ESTABELECER A COLÔNIA.]`,
-        imagem: "",
-        legenda: ""
-      }
-    ],
-    referencias: ["[ADICIONE AQUI AS REFERÊNCIAS DE GEOGRAFIA]"]
-  },
-  {
-    id: "tecnologia",
-    numero: "06",
-    nome: "Tecnologia",
-    icone: "⌁",
-    resumo: "Habitação, comunicação, robótica e sistemas de sobrevivência.",
-    responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
-    topicos: [
-      {
-        titulo: "Infraestrutura",
-        texto: `[COLE AQUI O TEXTO SOBRE HABITAÇÕES, TRANSPORTE E SISTEMAS DE SUPORTE À VIDA.]`,
-        imagem: "",
-        legenda: ""
-      },
-      {
-        titulo: "Automação e comunicação",
-        texto: `[COLE AQUI O TEXTO SOBRE ROBÔS, INTELIGÊNCIA ARTIFICIAL E COMUNICAÇÃO COM A TERRA.]`,
-        imagem: "",
-        legenda: ""
-      }
-    ],
-    referencias: ["[ADICIONE AQUI AS REFERÊNCIAS DE TECNOLOGIA]"]
   }
 ];
