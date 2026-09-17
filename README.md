@@ -60,6 +60,11 @@ Copie um bloco de tópico dentro de `topicos` e altere os dados:
 
 O QR Code deve apontar para esse endereço. Alterações futuras no conteúdo não exigem a troca do QR Code.
 
+Os arquivos prontos do QR Code estão na pasta `assets`:
+
+- `qr-code-projeto-marte.png`: use no vídeo do totem e em imagens digitais.
+- `qr-code-projeto-marte.svg`: use no banner, pois pode ser ampliado sem perder qualidade.
+
 ## Créditos visuais
 
 - Globo de Marte: NASA/JPL-Caltech, mosaico de imagens dos orbitadores Viking.
