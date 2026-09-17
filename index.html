@@ -1,1 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090d">
+  <meta name="description" content="Pesquisa interdisciplinar sobre os desafios e as soluções para uma colônia humana em Marte.">
+  <title>Projeto Marte | Pesquisa Interdisciplinar</title>
+  <link rel="preconnect" href="https://assets.science.nasa.gov">
+  <link rel="stylesheet" href="style.css">
+  <script src="conteudo.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
+  <header class="topbar" id="topo">
+    <a class="brand" href="#inicio" aria-label="Projeto Marte — início">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span><strong>PROJETO</strong> MARTE</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a class="active" href="#inicio">Início</a>
+      <a href="#pesquisa">Pesquisa</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#fontes">Fontes</a>
+    </nav>
+
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação para celular" hidden>
+    <a href="#inicio">Início</a>
+    <a href="#pesquisa">Pesquisa</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#fontes">Fontes</a>
+  </nav>
+
+  <main id="conteudo-principal">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="kicker"><span></span> Pesquisa interdisciplinar</p>
+        <h1 id="hero-title">O próximo lar<br>da humanidade<span>.</span></h1>
+        <p class="hero-lead">Uma investigação sobre os desafios científicos, tecnológicos e sociais de construir uma colônia humana sustentável em Marte.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#pesquisa">Explorar a pesquisa <span aria-hidden="true">↗</span></a>
+          <a class="text-button" href="#sobre">Conheça o projeto <span aria-hidden="true">↓</span></a>
+        </div>
+        <dl class="quick-facts" aria-label="Dados rápidos sobre Marte">
+          <div><dt>0,38 g</dt><dd>gravidade</dd></div>
+          <div><dt>−63 °C</dt><dd>média térmica</dd></div>
+          <div><dt>24h 39m</dt><dd>um sol</dd></div>
+        </dl>
+      </div>
+
+      <div class="planet-stage" aria-label="Marte, mosaico de imagens do orbitador Viking">
+        <div class="planet-orbit orbit-a" aria-hidden="true"></div>
+        <div class="planet-orbit orbit-b" aria-hidden="true"></div>
+        <div class="planet-glow" aria-hidden="true"></div>
+        <img
+          id="mars-planet"
+          class="mars-planet"
+          src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/downloadable_items/3/7/37983_mars-globe-valles-marineris-enhanced.jpg?crop=faces%2Cfocalpoint&amp;fit=clip&amp;h=1400&amp;w=1400"
+          alt="Imagem global de Marte com Valles Marineris, registrada por orbitadores Viking da NASA"
+          width="1400"
+          height="1400"
+          fetchpriority="high">
+        <div class="planet-shade" aria-hidden="true"></div>
+        <div class="coordinate-card glass" aria-hidden="true">
+          <span>04° 35′ S</span>
+          <span>137° 26′ E</span>
+          <i></i>
+          <small>JEZERO CRATER</small>
+        </div>
+        <div class="planet-label" aria-hidden="true"><span>04</span> PLANETA VERMELHO</div>
+      </div>
+
+      <a class="scroll-cue" href="#pesquisa" aria-label="Rolar para a pesquisa">
+        <span></span> Role para explorar
+      </a>
+    </section>
+
+    <section class="research" id="pesquisa" aria-labelledby="research-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker"><span></span> Arquivo da missão</p>
+          <h2 id="research-title">Áreas da pesquisa</h2>
+        </div>
+        <p>Navegue pelas disciplinas para acessar a pesquisa completa da turma. Use a busca para encontrar um assunto específico.</p>
+      </div>
+
+      <div class="search-wrap reveal">
+        <label for="site-search">Buscar na pesquisa</label>
+        <div class="search-field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input id="site-search" type="search" placeholder="Ex.: radiação, água, energia..." autocomplete="off">
+          <kbd>ESC</kbd>
+        </div>
+      </div>
+
+      <div class="research-layout">
+        <aside class="subject-sidebar glass reveal" aria-label="Disciplinas">
+          <p class="sidebar-label">DISCIPLINAS</p>
+          <div class="subject-tabs" id="subject-tabs" role="tablist" aria-orientation="vertical"></div>
+          <div class="mission-status">
+            <span class="pulse" aria-hidden="true"></span>
+            <div><small>STATUS DA MISSÃO</small><strong>Pesquisa em progresso</strong></div>
+          </div>
+        </aside>
+
+        <div class="subject-panel reveal" id="subject-panel" role="tabpanel" tabindex="0" aria-live="polite"></div>
+      </div>
+
+      <div class="search-results glass" id="search-results" hidden aria-live="polite"></div>
+    </section>
+
+    <section class="mars-window" aria-label="Panorama real da superfície de Marte">
+      <div class="panorama" data-parallax="0.08" role="img" aria-label="Panorama da região do delta da cratera Jezero registrado pelo rover Perseverance"></div>
+      <div class="mars-window-overlay"></div>
+      <div class="window-copy reveal">
+        <p class="kicker light"><span></span> Superfície marciana</p>
+        <blockquote>“Pesquisar Marte é imaginar, com ciência, como viver além da Terra.”</blockquote>
+        <p>Panorama da cratera Jezero · Perseverance · NASA/JPL-Caltech/ASU/MSSS</p>
+      </div>
+      <span class="image-index" aria-hidden="true">IMG / 02</span>
+    </section>
+
+    <section class="about" id="sobre" aria-labelledby="about-title">
+      <div class="about-number reveal" aria-hidden="true">01</div>
+      <div class="about-copy reveal">
+        <p class="kicker"><span></span> Sobre a iniciativa</p>
+        <h2 id="about-title">Uma pesquisa,<br>múltiplas perspectivas.</h2>
+        <p>Este site reúne o material produzido pela turma sobre a colonização de Marte. Ele complementa o banner, o vídeo do totem e a apresentação, preservando as informações que não cabem nos formatos resumidos.</p>
+      </div>
+      <div class="about-cards reveal">
+        <article><span>⌁</span><h3>Interdisciplinar</h3><p>Diferentes áreas analisam um mesmo problema.</p></article>
+        <article><span>◉</span><h3>Acessível</h3><p>Conteúdo organizado para consulta no celular.</p></article>
+        <article><span>↗</span><h3>Expansível</h3><p>Novos textos e imagens podem ser adicionados.</p></article>
+      </div>
+    </section>
+
+    <section class="sources" id="fontes" aria-labelledby="sources-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker"><span></span> Créditos e referências</p>
+          <h2 id="sources-title">Fontes do projeto</h2>
+        </div>
+        <p>As referências de cada disciplina podem ser cadastradas na área correspondente. Abaixo estão as fontes visuais usadas neste site.</p>
+      </div>
+      <div class="source-list reveal">
+        <a href="https://science.nasa.gov/resource/mars-planet-globe/" target="_blank" rel="noopener"><span>01</span><strong>Mars Planet Globe</strong><small>NASA/JPL-Caltech ↗</small></a>
+        <a href="https://science.nasa.gov/resource/detailed-panorama-of-mars-jezero-crater-delta/" target="_blank" rel="noopener"><span>02</span><strong>Jezero Crater Delta Panorama</strong><small>NASA/JPL-Caltech/ASU/MSSS ↗</small></a>
+        <div><span>03</span><strong>Pesquisa da turma</strong><small>Referências por disciplina</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#topo"><span class="brand-mark" aria-hidden="true"></span><span><strong>PROJETO</strong> MARTE</span></a>
+    <p>Pesquisa interdisciplinar · 2026</p>
+    <a class="back-top" href="#topo">Voltar ao topo ↑</a>
+  </footer>
+
+  <noscript><div class="noscript">Ative o JavaScript para navegar entre as disciplinas.</div></noscript>
+</body>
+</html>
