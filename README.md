@@ -1,6 +1,6 @@
 # Projeto Marte
 
-Mini-site responsivo para reunir a pesquisa interdisciplinar da turma sobre a colonização de Marte. O site foi pensado para ser aberto por QR Code no banner e no vídeo do totem.
+Mini-site responsivo do Projeto ATENA para reunir a pesquisa da turma sobre a colonização de Marte. O trabalho é desenvolvido em parceria com o Colégio Ágora Educação Integral e foi pensado para ser aberto por QR Code no banner e no vídeo do totem.
 
 ## Como adicionar os textos
 
