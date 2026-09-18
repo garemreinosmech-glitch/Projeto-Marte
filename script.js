@@ -26,13 +26,15 @@
   const isPlaceholder = (text = "") => /^\s*\[.*\]\s*$/s.test(text);
 
   const formatInline = (value = "") => escapeHtml(value)
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
 
   function formatText(value = "") {
     const lines = String(value).replace(/\r\n?/g, "\n").split("\n");
     const blocks = [];
     let paragraph = [];
-    let list = [];
+    let unordered = [];
+    let ordered = [];
 
     const flushParagraph = () => {
       if (!paragraph.length) return;
@@ -40,28 +42,50 @@
       paragraph = [];
     };
 
-    const flushList = () => {
-      if (!list.length) return;
-      blocks.push(`<ul>${list.map((item) => `<li>${formatInline(item)}</li>`).join("")}</ul>`);
-      list = [];
+    const flushUnordered = () => {
+      if (!unordered.length) return;
+      blocks.push(`<ul>${unordered.map((item) => `<li>${formatInline(item)}</li>`).join("")}</ul>`);
+      unordered = [];
+    };
+
+    const flushOrdered = () => {
+      if (!ordered.length) return;
+      blocks.push(`<ol>${ordered.map((item) => `<li>${formatInline(item)}</li>`).join("")}</ol>`);
+      ordered = [];
+    };
+
+    const flushAll = () => {
+      flushParagraph();
+      flushUnordered();
+      flushOrdered();
     };
 
     lines.forEach((line) => {
-      const bullet = line.match(/^\s*[-•]\s+(.+)$/);
-      if (bullet) {
+      const heading = line.match(/^\s*#{2,4}\s+(.+)$/);
+      const bullet = line.match(/^\s*[-•*]\s+(.+)$/);
+      const number = line.match(/^\s*\d+[.)]\s+(.+)$/);
+
+      if (heading) {
+        flushAll();
+        blocks.push(`<h5>${formatInline(heading[1])}</h5>`);
+      } else if (bullet) {
         flushParagraph();
-        list.push(bullet[1]);
+        flushOrdered();
+        unordered.push(bullet[1]);
+      } else if (number) {
+        flushParagraph();
+        flushUnordered();
+        ordered.push(number[1]);
       } else if (!line.trim()) {
-        flushParagraph();
-        flushList();
+        flushAll();
       } else {
-        flushList();
+        flushUnordered();
+        flushOrdered();
         paragraph.push(line.trim());
       }
     });
 
-    flushParagraph();
-    flushList();
+    flushAll();
     return blocks.join("");
   }
 
@@ -93,9 +117,10 @@
     const topics = (subject.topicos || []).map((topic, index) => {
       const placeholder = isPlaceholder(topic.texto);
       const topicNumber = String(index + 1).padStart(2, "0");
+      const imageTag = `<img src="${escapeHtml(topic.imagem)}" alt="${escapeHtml(topic.legenda || topic.titulo)}" loading="lazy">`;
       const image = topic.imagem ? `
         <figure class="topic-image">
-          <img src="${escapeHtml(topic.imagem)}" alt="${escapeHtml(topic.legenda || topic.titulo)}" loading="lazy">
+          ${topic.fonte ? `<a href="${escapeHtml(topic.fonte)}" target="_blank" rel="noopener" aria-label="Abrir a fonte desta imagem">${imageTag}</a>` : imageTag}
           ${topic.legenda ? `<figcaption>${escapeHtml(topic.legenda)}</figcaption>` : ""}
         </figure>` : "";
       return `
@@ -112,7 +137,13 @@
         </details>`;
     }).join("");
 
-    const references = (subject.referencias || []).map((reference) => `<li>${escapeHtml(reference)}</li>`).join("");
+    const references = (subject.referencias || []).map((reference) => {
+      const title = typeof reference === "string" ? reference : reference.titulo;
+      const url = typeof reference === "object" ? reference.url : "";
+      return url
+        ? `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(title)} <span aria-hidden="true">↗</span></a></li>`
+        : `<li>${escapeHtml(title)}</li>`;
+    }).join("");
 
     panel.innerHTML = `
       <header class="subject-hero">
@@ -131,10 +162,10 @@
         </div>
       </div>
       <div class="topic-list">${topics}</div>
-      <section class="references-box">
-        <h4>Referências desta disciplina</h4>
+      <details class="references-box">
+        <summary><span>Referências desta disciplina</span><small>${subject.referencias?.length || 0} fontes</small></summary>
         <ul>${references}</ul>
-      </section>`;
+      </details>`;
 
     panel.setAttribute("aria-labelledby", `tab-${subject.id}`);
     if (updateHash && location.hash.startsWith("#disciplina-")) {
