@@ -50,21 +50,26 @@
       tab.setAttribute("aria-selected", String(tab.dataset.subject === subject.id));
     });
 
-    const topics = (subject.topicos || []).map((topic) => {
+    const topics = (subject.topicos || []).map((topic, index) => {
       const textClass = isPlaceholder(topic.texto) ? "placeholder" : "";
+      const topicNumber = String(index + 1).padStart(2, "0");
       const image = topic.imagem ? `
         <figure class="topic-image">
           <img src="${escapeHtml(topic.imagem)}" alt="${escapeHtml(topic.legenda || topic.titulo)}" loading="lazy">
           ${topic.legenda ? `<figcaption>${escapeHtml(topic.legenda)}</figcaption>` : ""}
         </figure>` : "";
       return `
-        <article class="topic-card">
-          <div>
+        <details class="topic-card" data-topic-index="${index}" ${index === 0 ? "open" : ""}>
+          <summary class="topic-summary">
+            <span class="topic-number" aria-hidden="true">${topicNumber}</span>
             <h4>${escapeHtml(topic.titulo)}</h4>
+            <span class="topic-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="topic-content">
             <p class="${textClass}">${escapeHtml(topic.texto)}</p>
             ${image}
           </div>
-        </article>`;
+        </details>`;
     }).join("");
 
     const references = (subject.referencias || []).map((reference) => `<li>${escapeHtml(reference)}</li>`).join("");
@@ -78,6 +83,13 @@
         </div>
         <span class="subject-number" aria-hidden="true">${escapeHtml(subject.numero)}</span>
       </header>
+      <div class="topic-toolbar" aria-label="Controles dos tópicos">
+        <span>${subject.topicos?.length || 0} tópicos</span>
+        <div>
+          <button type="button" data-topic-action="expand">Expandir todos</button>
+          <button type="button" data-topic-action="collapse">Recolher todos</button>
+        </div>
+      </div>
       <div class="topic-list">${topics}</div>
       <section class="references-box">
         <h4>Referências desta disciplina</h4>
@@ -90,11 +102,22 @@
     }
   }
 
-  function chooseSubject(subjectId, focusPanel = false) {
+  function chooseSubject(subjectId, focusPanel = false, topicIndex = null) {
     renderSubject(subjectId, false);
     history.replaceState(null, "", `#disciplina-${subjectId}`);
     document.querySelector("#pesquisa").scrollIntoView({ behavior: prefersReducedMotion.matches ? "auto" : "smooth", block: "start" });
-    if (focusPanel) setTimeout(() => panel.focus({ preventScroll: true }), 450);
+    if (focusPanel) {
+      const delay = prefersReducedMotion.matches ? 0 : 450;
+      setTimeout(() => {
+        const topic = Number.isInteger(topicIndex) ? panel.querySelector(`[data-topic-index="${topicIndex}"]`) : null;
+        if (topic) {
+          topic.open = true;
+          topic.scrollIntoView({ behavior: prefersReducedMotion.matches ? "auto" : "smooth", block: "center" });
+        } else {
+          panel.focus({ preventScroll: true });
+        }
+      }, delay);
+    }
   }
 
   function initializeSubjects() {
@@ -120,6 +143,13 @@
       next.focus();
       next.click();
     });
+
+    panel.addEventListener("click", (event) => {
+      const control = event.target.closest("[data-topic-action]");
+      if (!control) return;
+      const shouldOpen = control.dataset.topicAction === "expand";
+      panel.querySelectorAll(".topic-card").forEach((topic) => { topic.open = shouldOpen; });
+    });
   }
 
   function plainText(value = "") {
@@ -136,17 +166,17 @@
 
     const matches = [];
     subjects.forEach((subject) => {
-      (subject.topicos || []).forEach((topic) => {
+      (subject.topicos || []).forEach((topic, topicIndex) => {
         const haystack = `${subject.nome} ${subject.resumo} ${topic.titulo} ${topic.texto}`.toLocaleLowerCase("pt-BR");
-        if (haystack.includes(term)) matches.push({ subject, topic });
+        if (haystack.includes(term)) matches.push({ subject, topic, topicIndex });
       });
     });
 
     results.hidden = false;
     results.innerHTML = matches.length ? `
       <h3>${matches.length} resultado${matches.length === 1 ? "" : "s"} para “${escapeHtml(query)}”</h3>
-      ${matches.map(({ subject, topic }) => `
-        <article class="result-item" tabindex="0" data-result="${escapeHtml(subject.id)}">
+      ${matches.map(({ subject, topic, topicIndex }) => `
+        <article class="result-item" tabindex="0" data-result="${escapeHtml(subject.id)}" data-topic-index="${topicIndex}">
           <small>${escapeHtml(subject.nome)}</small>
           <div><strong>${escapeHtml(topic.titulo)}</strong><p>${escapeHtml(plainText(topic.texto).slice(0, 150))}${topic.texto.length > 150 ? "…" : ""}</p></div>
         </article>`).join("")}` : `<p class="no-results">Nenhum resultado encontrado. Tente outra palavra.</p>`;
@@ -163,13 +193,13 @@
     });
     results.addEventListener("click", (event) => {
       const item = event.target.closest("[data-result]");
-      if (item) chooseSubject(item.dataset.result, true);
+      if (item) chooseSubject(item.dataset.result, true, Number(item.dataset.topicIndex));
     });
     results.addEventListener("keydown", (event) => {
       const item = event.target.closest("[data-result]");
       if (item && ["Enter", " "].includes(event.key)) {
         event.preventDefault();
-        chooseSubject(item.dataset.result, true);
+        chooseSubject(item.dataset.result, true, Number(item.dataset.topicIndex));
       }
     });
   }
