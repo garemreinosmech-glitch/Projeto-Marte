@@ -89,6 +89,71 @@
     return blocks.join("");
   }
 
+  function renderVisualization(type = "") {
+    if (type !== "transferencia-hohmann") return "";
+
+    return `
+      <figure class="mission-visual hohmann-visual">
+        <div class="visual-header">
+          <span>MODELO ORBITAL SIMPLIFICADO</span>
+          <strong>Transferência de Hohmann</strong>
+        </div>
+        <svg viewBox="0 0 760 430" role="img" aria-labelledby="hohmann-title hohmann-desc">
+          <title id="hohmann-title">Diagrama da transferência de Hohmann entre a Terra e Marte</title>
+          <desc id="hohmann-desc">O Sol aparece no centro, cercado pelas órbitas da Terra e de Marte. A nave percorre uma trajetória elíptica da órbita terrestre até a órbita marciana. Um marcador mostra Marte aproximadamente quarenta e quatro graus à frente da Terra no lançamento.</desc>
+          <defs>
+            <linearGradient id="transfer-gradient" x1="0" x2="1">
+              <stop offset="0" stop-color="#8fb8ff"/>
+              <stop offset="1" stop-color="#ff6b3d"/>
+            </linearGradient>
+            <filter id="sun-glow" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="12" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <marker id="route-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#ff8a5f"/>
+            </marker>
+          </defs>
+
+          <circle class="orbit orbit-earth" cx="380" cy="215" r="96"/>
+          <circle class="orbit orbit-mars" cx="380" cy="215" r="166"/>
+
+          <line class="phase-line" x1="380" y1="215" x2="284" y2="215"/>
+          <line class="phase-line" x1="380" y1="215" x2="261" y2="99"/>
+          <path class="phase-arc" d="M331 215 A49 49 0 0 1 345 181"/>
+          <text class="phase-text" x="304" y="174">≈ 44°</text>
+          <text class="phase-note" x="198" y="73">MARTE NO LANÇAMENTO</text>
+
+          <path class="transfer-path" d="M284 215 C305 394 512 394 546 215" marker-end="url(#route-arrow)"/>
+          <circle class="route-dot" cx="355" cy="329" r="4"/>
+          <circle class="route-dot" cx="451" cy="333" r="4"/>
+          <text class="route-label" x="351" y="382">≈ 259 DIAS</text>
+
+          <circle class="sun-glow" cx="380" cy="215" r="34"/>
+          <circle class="sun" cx="380" cy="215" r="19" filter="url(#sun-glow)"/>
+          <text class="body-label" x="366" y="258">SOL</text>
+
+          <circle class="earth" cx="284" cy="215" r="11"/>
+          <circle class="earth-light" cx="280" cy="211" r="3"/>
+          <text class="body-label earth-label" x="252" y="245">TERRA</text>
+
+          <circle class="mars-ghost" cx="261" cy="99" r="9"/>
+          <circle class="mars" cx="546" cy="215" r="13"/>
+          <circle class="mars-light" cx="542" cy="211" r="3"/>
+          <text class="body-label mars-label" x="524" y="249">MARTE</text>
+          <text class="arrival-note" x="565" y="205">ENCONTRO</text>
+
+          <g class="legend" transform="translate(34 350)">
+            <line x1="0" y1="0" x2="28" y2="0" class="legend-orbit"/>
+            <text x="39" y="4">ÓRBITAS MÉDIAS</text>
+            <line x1="0" y1="27" x2="28" y2="27" class="legend-transfer"/>
+            <text x="39" y="31">TRAJETÓRIA DA NAVE</text>
+          </g>
+        </svg>
+        <figcaption>Representação didática, fora de escala. A nave encontra Marte onde o planeta estará ao final da transferência — não onde ele estava na partida.</figcaption>
+      </figure>`;
+  }
+
   function renderTabs() {
     tabs.innerHTML = subjects.map((subject, index) => `
       <button
@@ -123,6 +188,7 @@
           ${topic.fonte ? `<a href="${escapeHtml(topic.fonte)}" target="_blank" rel="noopener" aria-label="Abrir a fonte desta imagem">${imageTag}</a>` : imageTag}
           ${topic.legenda ? `<figcaption>${escapeHtml(topic.legenda)}</figcaption>` : ""}
         </figure>` : "";
+      const visualization = renderVisualization(topic.visualizacao);
       return `
         <details class="topic-card" data-topic-index="${index}" ${index === 0 ? "open" : ""}>
           <summary class="topic-summary">
@@ -132,6 +198,7 @@
           </summary>
           <div class="topic-content">
             ${placeholder ? `<p class="placeholder">${escapeHtml(topic.texto)}</p>` : formatText(topic.texto)}
+            ${visualization}
             ${image}
           </div>
         </details>`;
