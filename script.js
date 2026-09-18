@@ -25,6 +25,46 @@
 
   const isPlaceholder = (text = "") => /^\s*\[.*\]\s*$/s.test(text);
 
+  const formatInline = (value = "") => escapeHtml(value)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+
+  function formatText(value = "") {
+    const lines = String(value).replace(/\r\n?/g, "\n").split("\n");
+    const blocks = [];
+    let paragraph = [];
+    let list = [];
+
+    const flushParagraph = () => {
+      if (!paragraph.length) return;
+      blocks.push(`<p>${formatInline(paragraph.join(" "))}</p>`);
+      paragraph = [];
+    };
+
+    const flushList = () => {
+      if (!list.length) return;
+      blocks.push(`<ul>${list.map((item) => `<li>${formatInline(item)}</li>`).join("")}</ul>`);
+      list = [];
+    };
+
+    lines.forEach((line) => {
+      const bullet = line.match(/^\s*[-•]\s+(.+)$/);
+      if (bullet) {
+        flushParagraph();
+        list.push(bullet[1]);
+      } else if (!line.trim()) {
+        flushParagraph();
+        flushList();
+      } else {
+        flushList();
+        paragraph.push(line.trim());
+      }
+    });
+
+    flushParagraph();
+    flushList();
+    return blocks.join("");
+  }
+
   function renderTabs() {
     tabs.innerHTML = subjects.map((subject, index) => `
       <button
@@ -51,7 +91,7 @@
     });
 
     const topics = (subject.topicos || []).map((topic, index) => {
-      const textClass = isPlaceholder(topic.texto) ? "placeholder" : "";
+      const placeholder = isPlaceholder(topic.texto);
       const topicNumber = String(index + 1).padStart(2, "0");
       const image = topic.imagem ? `
         <figure class="topic-image">
@@ -66,7 +106,7 @@
             <span class="topic-toggle" aria-hidden="true"></span>
           </summary>
           <div class="topic-content">
-            <p class="${textClass}">${escapeHtml(topic.texto)}</p>
+            ${placeholder ? `<p class="placeholder">${escapeHtml(topic.texto)}</p>` : formatText(topic.texto)}
             ${image}
           </div>
         </details>`;
