@@ -357,18 +357,34 @@ img { max-width: 100%; }
 .topic-card p { max-width: 76ch; margin: 0; overflow-wrap: anywhere; color: #b5b6be; line-height: 1.85; }
 .topic-card p + p { margin-top: 18px; }
 .topic-card strong { color: #f1eee8; font-weight: 650; }
-.topic-card ul { max-width: 76ch; margin: 18px 0 0; padding: 0; list-style: none; color: #b5b6be; }
-.topic-card li { position: relative; padding-left: 22px; line-height: 1.75; }
+.topic-card em { color: #d8d5cf; }
+.topic-content h5 { max-width: 76ch; margin: 30px 0 12px; color: var(--orange-soft); font: 600 .76rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .09em; text-transform: uppercase; }
+.topic-content h5:first-child { margin-top: 0; }
+.topic-card ul, .topic-card ol { max-width: 76ch; margin: 16px 0 20px; color: #b5b6be; }
+.topic-card ul { padding: 0; list-style: none; }
+.topic-card ol { padding-left: 24px; }
+.topic-card li { position: relative; line-height: 1.75; }
 .topic-card li + li { margin-top: 9px; }
-.topic-card li::before { content: ""; position: absolute; left: 2px; top: .72em; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 10px rgba(255,91,46,.35); }
+.topic-card ul li { padding-left: 22px; }
+.topic-card ul li::before { content: ""; position: absolute; left: 2px; top: .72em; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 10px rgba(255,91,46,.35); }
 .topic-card .placeholder { display: inline-block; padding: 12px 14px; color: #8c8d95; background: repeating-linear-gradient(135deg, rgba(255,255,255,.025), rgba(255,255,255,.025) 7px, rgba(255,255,255,.04) 7px, rgba(255,255,255,.04) 14px); border: 1px dashed rgba(255,255,255,.16); }
-.topic-image { margin: 22px 0 0; }
-.topic-image img { width: 100%; max-height: 480px; object-fit: cover; border-radius: 2px; }
-.topic-image figcaption { margin-top: 8px; color: #777983; font: 8px/1.5 ui-monospace, monospace; letter-spacing: .08em; }
+.topic-image { max-width: 820px; margin: 28px 0 0; }
+.topic-image a { display: block; border-radius: 18px; overflow: hidden; box-shadow: 0 18px 45px rgba(0,0,0,.28); }
+.topic-image img { display: block; width: 100%; max-height: 480px; object-fit: cover; border-radius: 18px; transition: transform .35s ease, filter .35s ease; }
+.topic-image a:hover img { transform: scale(1.015); filter: brightness(1.06); }
+.topic-image figcaption { margin-top: 10px; color: #777983; font: 8px/1.6 ui-monospace, monospace; letter-spacing: .08em; }
 @keyframes topicOpen { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: none; } }
-.references-box { margin: 28px 8px 0 84px; padding: 20px; border-left: 1px solid var(--orange); background: rgba(255,255,255,.025); }
-.references-box h4 { margin: 0 0 12px; color: #a6a8b0; font: 9px/1 ui-monospace, monospace; letter-spacing: .16em; text-transform: uppercase; }
-.references-box ul { margin: 0; padding-left: 18px; color: #858791; line-height: 1.7; }
+.references-box { margin: 28px 8px 0 84px; padding: 0 20px; border-left: 1px solid var(--orange); background: rgba(255,255,255,.025); }
+.references-box summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 0; color: #a6a8b0; list-style: none; cursor: pointer; font: 600 9px/1 ui-monospace, monospace; letter-spacing: .16em; text-transform: uppercase; }
+.references-box summary::-webkit-details-marker { display: none; }
+.references-box summary::after { content: "+"; color: var(--orange-soft); font-size: 18px; font-weight: 300; }
+.references-box[open] summary::after { content: "−"; }
+.references-box summary small { margin-left: auto; color: #666873; font: 7px/1 ui-monospace, monospace; letter-spacing: .1em; }
+.references-box ul { margin: 0; padding: 0 0 20px; color: #858791; list-style: none; }
+.references-box li { padding: 10px 0; border-top: 1px solid rgba(255,255,255,.07); line-height: 1.55; }
+.references-box a { color: #9d9fa8; font-size: 10px; text-decoration: none; }
+.references-box a:hover { color: var(--orange-soft); }
+.references-box a span { margin-left: 5px; color: var(--orange-soft); }
 
 .search-results { margin-left: 284px; margin-top: 24px; padding: 24px; }
 .search-results h3 { margin: 0 0 18px; font: 400 1.4rem/1.2 Georgia, serif; }
