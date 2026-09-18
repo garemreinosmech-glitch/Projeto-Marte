@@ -447,7 +447,7 @@ Por isso, um sistema energético estável e redundante seria um dos elementos fu
     nome: "Matemática",
     icone: "△",
     resumo: "Custos, trajes, características de Marte, necessidades humanas e planejamento da viagem.",
-    responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
+    responsaveis: "Thiago Fernandes, Lucas Oceliano, Pedro Lucas Teixeira, Bruno Vieira, Gabriel de Souza, João Gabriel e Vinicius Pinheiro",
     topicos: [
       {
         titulo: "Custos de uma Missão a Marte",
@@ -1121,7 +1121,7 @@ Se estiver rápida demais em relação ao planeta, não será capturada pela gra
     nome: "Química",
     icone: "⬡",
     resumo: "Água, oxigênio, combustível, solo, alimentos, materiais e ciclos autossuficientes.",
-    responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
+    responsaveis: "Davi Bordini, Davi Lisboa, Pedro José, José Henrique, Moisés Medeiros, Christian Gabbriel e Pedro Gabriel",
     topicos: [
       {
         titulo: "Extração e Reutilização da Água",
@@ -1336,7 +1336,7 @@ Esse reaproveitamento reduziria drasticamente a dependência de suprimentos envi
     nome: "Biologia",
     icone: "✣",
     resumo: "Das primeiras microvidas à formação de uma população de plantas e animais.",
-    responsaveis: "[ADICIONE OS NOMES DOS RESPONSÁVEIS]",
+    responsaveis: "Marina Leite, Ana Victoria, Maria Luiza, Lorena e Manuelly",
     topicos: [
       {
         titulo: "As Primeiras Microvidas",
