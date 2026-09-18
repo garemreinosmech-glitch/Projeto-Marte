@@ -6,6 +6,9 @@
   2. Para criar outro tópico, copie um bloco { titulo, texto, imagem }.
   3. O campo imagem pode ficar vazio: imagem: ""
   4. Não apague vírgulas, chaves ou crases.
+  5. Para escrever em negrito, use: **texto em negrito**
+  6. Para criar uma lista com bolinhas, comece cada linha com: - texto
+  7. Deixe uma linha vazia para iniciar um novo parágrafo.
 */
 
 window.PESQUISA_MARTE = [
