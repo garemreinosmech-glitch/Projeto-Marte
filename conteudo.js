@@ -829,15 +829,254 @@ O planejamento matemático procura encontrar um equilíbrio entre **segurança, 
         fonte: ""
       },
       {
-        titulo: "Trajetória da Terra até Marte",
-        texto: `[COLE AQUI O TEXTO SOBRE A TRAJETÓRIA DA TERRA ATÉ MARTE.]`,
+        titulo: "Cápsula e suas Partes Integrantes",
+        texto: `A cápsula desenvolvida para a **Missão ATENA** é um projeto conceitual inspirado na espaçonave **Orion**, utilizada pelo programa Artemis da NASA, mas modificada para atender às necessidades de uma viagem tripulada até Marte.
+
+A Orion real foi projetada para transportar **quatro astronautas** em missões de até 21 dias quando operando de forma independente. Como a Missão ATENA considera **10 tripulantes durante vários meses**, seria necessário ampliar significativamente seu espaço interno, sua capacidade de armazenamento e seus sistemas de suporte à vida.
+
+### Dimensões da cápsula da Missão ATENA
+
+Para o projeto, foram adotadas as seguintes dimensões conceituais:
+
+- **Altura:** 7 metros;
+- **largura máxima:** 9 metros;
+- **capacidade:** 10 tripulantes.
+
+Essas **não são as dimensões da Orion real**. São medidas propostas especificamente pelo projeto escolar para representar uma cápsula ampliada destinada à missão marciana.
+
+### Estrutura interna — Backbone
+
+No projeto ATENA, o **Backbone** representa a estrutura central de sustentação e organização interna da cápsula.
+
+Ele serviria como suporte para:
+
+- equipamentos;
+- cabos;
+- computadores;
+- sistemas de suporte à vida;
+- áreas internas;
+- conexões entre diferentes componentes.
+
+Essa divisão é uma **adaptação criada para a Missão ATENA** e não deve ser apresentada como uma peça oficialmente chamada “Backbone” no módulo de tripulação da Orion.
+
+### Pressure Vessel — Estrutura pressurizada
+
+Ao redor das áreas habitáveis estaria o **Pressure Vessel**, ou vaso de pressão.
+
+Na Orion real, essa é a principal estrutura hermética do módulo da tripulação. Ela é formada por peças de liga de alumínio soldadas para criar uma cápsula resistente e estanque.
+
+Sua função é permitir a manutenção de uma atmosfera artificial no interior da nave, garantindo:
+
+- pressão adequada;
+- retenção do ar;
+- integridade estrutural;
+- ambiente habitável para a tripulação.
+
+Na Missão ATENA, essa estrutura precisaria ser redimensionada para comportar os dez tripulantes.
+
+### Backshell — Proteção externa
+
+A **Backshell** cobre as laterais externas do módulo pressurizado.
+
+Na Orion, ela possui aproximadamente **1.300 placas do sistema de proteção térmica**, fabricadas principalmente com fibras de sílica do material AETB-8.
+
+Sua função é proteger a cápsula contra:
+
+- grandes variações de temperatura;
+- calor durante a reentrada;
+- frio extremo do espaço;
+- pequenos detritos e micrometeoritos.
+
+### Heat Shield — Escudo térmico
+
+Na parte inferior da cápsula está o **escudo térmico**. Na Orion, ele precisa suportar temperaturas externas próximas de **2.760 °C** durante uma reentrada terrestre em velocidade de retorno lunar.
+
+Sua superfície utiliza **Avcoat**, um material ablativo. Durante a reentrada, as camadas externas se degradam e queimam de maneira controlada, carregando parte da energia térmica para longe da estrutura interna.
+
+Em uma missão exclusivamente de ida para Marte, um sistema térmico continuaria sendo indispensável, mas a proteção para a **entrada na atmosfera marciana** teria requisitos diferentes do escudo usado pela Orion para retornar à Terra.
+
+### Sistema de paraquedas
+
+Na Orion, o sistema completo possui **11 paraquedas que atuam em etapas diferentes**. Eles estabilizam a cápsula, removem a cobertura superior e realizam a desaceleração final para um pouso seguro no oceano.
+
+Para Marte, entretanto, o sistema teria de ser diferente, pois a atmosfera marciana é muito mais fina e paraquedas sozinhos dificilmente seriam suficientes para uma cápsula tripulada tão pesada.
+
+### European Service Module — O módulo de serviço
+
+Ligado abaixo da cápsula estaria um módulo inspirado no **European Service Module — ESM** da Orion.
+
+Na Orion real, ele fornece:
+
+- energia elétrica;
+- propulsão;
+- controle térmico;
+- água;
+- oxigênio;
+- nitrogênio;
+- controle de orientação.
+
+### Dimensões no projeto ATENA
+
+Para a versão ampliada da Missão ATENA, foram adotadas:
+
+- **Altura:** 10 metros;
+- **largura máxima:** 9 metros.
+
+Essas são **medidas conceituais da ATENA**. O ESM verdadeiro da Orion possui aproximadamente **4 metros de comprimento** e cerca de 5 metros de diâmetro em sua configuração externa.
+
+### Geração de energia
+
+O ESM da Orion utiliza **quatro asas de painéis solares**. Elas podem se movimentar em dois eixos para manter uma orientação favorável em relação ao Sol e, quando abertas, formam uma estrutura com aproximadamente **19 metros de extensão total**.
+
+Na ATENA, um sistema semelhante poderia ser ampliado e associado a baterias de maior capacidade para sustentar a viagem até Marte.
+
+### Propulsão e controle de trajetória
+
+Os motores do módulo de serviço são responsáveis por alterar a trajetória e a velocidade, controlar a orientação e realizar correções de curso. Não é correto dizer que eles permanecem ligados para **“manter a velocidade constante”** durante toda a viagem: durante grande parte do percurso interplanetário, a nave segue sua trajetória sem propulsão contínua.
+
+### Água, oxigênio e nitrogênio
+
+O ESM verdadeiro possui tanques separados para água potável, oxigênio e nitrogênio. Para uma viagem de vários meses com dez pessoas, a ATENA precisaria de sistemas muito maiores combinados com tecnologias de **reciclagem de água e ar**, pois apenas aumentar os tanques tornaria a nave excessivamente pesada.
+
+### Computadores de controle
+
+Os **dois Vehicle Management Computers — VMCs** fazem parte da arquitetura de computação da **Orion como um todo**, e não exclusivamente do ESM.
+
+Cada VMC possui **dois Flight Computer Modules — FCMs**, totalizando quatro FCMs principais. Os módulos trabalham de maneira redundante; se um deles detectar falhas, pode interromper suas saídas, reiniciar e sincronizar-se novamente com os demais. A Orion ainda possui uma plataforma computacional diferente capaz de executar um sistema de voo de emergência.
+
+No projeto ATENA, esses computadores podem ser descritos como o **sistema central de controle da espaçonave**.
+
+### Distribuição interna dos recursos da ATENA
+
+Para representar visualmente o armazenamento necessário para dez tripulantes, o projeto divide conceitualmente o módulo de serviço de 10 metros em três regiões:
+
+- **1,20 m — Água e sistemas associados:** reservatórios e gerenciamento de água;
+- **3,80 m — Alimentos, suprimentos e materiais:** alimentos, equipamentos e materiais essenciais à colônia;
+- **5,00 m — Energia, gases e sistemas técnicos:** baterias, sistemas elétricos, tanques de oxigênio e nitrogênio e infraestrutura técnica.
+
+Essa é uma **simplificação criada pelo projeto ATENA**. Em uma nave real, tanques, motores, estruturas e equipamentos seriam posicionados considerando massa, centro de gravidade, segurança, acesso e distribuição de cargas.`,
         imagem: "",
         legenda: "",
         fonte: ""
       },
       {
+        titulo: "Trajetória da Terra até Marte",
+        texto: `A viagem entre a Terra e Marte **não acontece em linha reta**.
+
+Isso ocorre porque os dois planetas estão constantemente se movimentando ao redor do Sol. Assim, a nave precisa ser lançada em direção ao ponto onde **Marte estará meses depois**, e não simplesmente para sua posição no momento da partida.
+
+### 1. Saída da Terra
+
+A nave é lançada da superfície terrestre e inicialmente ganha velocidade suficiente para alcançar o espaço. Dependendo da arquitetura da missão, ela pode primeiro permanecer em órbita terrestre antes de realizar a manobra que a colocará em trajetória interplanetária.
+
+### 2. Saída da órbita terrestre
+
+Depois, a nave realiza uma manobra para alterar sua velocidade e abandonar sua trajetória ao redor da Terra. A partir desse momento, o movimento da espaçonave passa a ser analisado principalmente em relação ao **Sol**: ela entra em uma **trajetória heliocêntrica**.
+
+### 3. Trajetória de transferência
+
+Uma forma clássica de representar matematicamente a viagem é através da **Transferência de Hohmann**.
+
+Nesse modelo simplificado, a nave segue parte de uma órbita elíptica ao redor do Sol. A região mais próxima do Sol coincide aproximadamente com a órbita terrestre e a região mais distante alcança aproximadamente a órbita de Marte.
+
+Utilizando as distâncias orbitais médias:
+
+- **Terra ≈ 1 UA**;
+- **Marte ≈ 1,52 UA**.
+
+### Duração da transferência
+
+O modelo educacional da NASA/JPL calcula um período orbital de aproximadamente **517 dias** para a elipse completa. Como a viagem utiliza apenas metade da órbita:
+
+**517 ÷ 2 ≈ 259 dias**
+
+Assim, uma Transferência de Hohmann simplificada entre Terra e Marte levaria aproximadamente **259 dias**, ou cerca de oito meses e meio. Missões reais podem utilizar trajetórias diferentes e apresentar tempos menores ou maiores.
+
+### Posição de Marte no lançamento
+
+Durante os 259 dias da transferência, Marte continua se movendo. No modelo simplificado da NASA/JPL, isso significa que, no lançamento, Marte deve estar aproximadamente **44° à frente da Terra**.
+
+Essa necessidade é responsável pelas chamadas **janelas de lançamento**. Se a nave partir no momento errado, alcançará a órbita de Marte quando o planeta não estiver naquele local.
+
+### 4. Correções durante a viagem
+
+Depois de sair da Terra, a nave não precisa manter seus motores ligados durante todo o percurso. Grande parte da viagem ocorre por movimento orbital, com pequenos acionamentos dos propulsores para:
+
+- corrigir a trajetória;
+- alterar a velocidade;
+- ajustar a direção;
+- controlar a orientação da nave.
+
+### 5. Aproximação de Marte
+
+Ao alcançar a região de Marte, a nave precisa possuir **posição, direção e velocidade adequadas**. Para entrar em órbita, deve reduzir sua velocidade relativa ao planeta. Caso a missão tenha como objetivo pousar, inicia-se depois uma sequência de **entrada atmosférica, desaceleração e descida**.
+
+### Resumo
+
+**Terra → lançamento → órbita terrestre → manobra de partida → trajetória ao redor do Sol → correções de curso → aproximação de Marte → desaceleração → órbita ou pouso.**`,
+        imagem: "",
+        legenda: "",
+        fonte: "",
+        visualizacao: "transferencia-hohmann"
+      },
+      {
         titulo: "Distância, Velocidade e Aproximação a Marte",
-        texto: `[COLE AQUI O TEXTO SOBRE DISTÂNCIA, VELOCIDADE E APROXIMAÇÃO A MARTE.]`,
+        texto: `Um dos pontos mais importantes para compreender matematicamente a viagem é perceber que **a distância entre Terra e Marte não é a mesma coisa que a distância percorrida pela nave**.
+
+### Distância entre Terra e Marte
+
+Como os dois planetas orbitam o Sol em velocidades diferentes, a separação entre eles muda constantemente. Ela pode variar aproximadamente entre:
+
+- **54,6 milhões de quilômetros**, em aproximações particularmente favoráveis;
+- **401 milhões de quilômetros**, quando estão muito afastados.
+
+Portanto, não existe uma única “distância da Terra até Marte”.
+
+### Por que a nave percorre muito mais?
+
+Mesmo quando os planetas estão separados por dezenas de milhões de quilômetros, a nave não atravessa uma linha reta entre eles. Ela entra em uma órbita curva ao redor do Sol enquanto a Terra e Marte continuam se movimentando e a própria espaçonave é acelerada pela gravidade solar.
+
+Por isso, o comprimento da trajetória pode chegar a **centenas de milhões de quilômetros**.
+
+### Exemplo real: Curiosity
+
+A missão Mars Science Laboratory, responsável pelo rover Curiosity, percorreu aproximadamente **567 milhões de quilômetros** durante sua viagem até Marte.
+
+Esse valor não vale para todas as missões: ele demonstra a diferença entre a **distância instantânea dos planetas** e a **trajetória efetivamente percorrida por uma espaçonave**.
+
+### Velocidade heliocêntrica
+
+A velocidade orbital média da Terra é aproximadamente **29,78 km/s**, enquanto Marte se desloca a aproximadamente **24,08 km/s**. Os dois planetas percorrem dezenas de quilômetros **a cada segundo** enquanto a nave viaja entre eles.
+
+### A velocidade depende do referencial
+
+No espaço, dizer apenas que “a nave está a determinada velocidade” pode ser insuficiente. Sua velocidade pode ser medida em relação:
+
+- à Terra;
+- ao Sol;
+- a Marte.
+
+A mesma espaçonave pode apresentar valores diferentes dependendo do referencial utilizado.
+
+### Por que não usar apenas distância ÷ velocidade?
+
+O cálculo **tempo = distância ÷ velocidade** é útil quando distância e velocidade podem ser consideradas aproximadamente constantes. Uma viagem interplanetária é mais complexa porque:
+
+- a direção da nave muda;
+- sua velocidade muda;
+- Terra e Marte continuam em movimento;
+- a gravidade do Sol influencia toda a trajetória;
+- são realizadas correções de curso.
+
+Por isso, trajetórias reais são calculadas através da **mecânica orbital**. Para o projeto escolar, podem ser utilizadas simplificações com órbitas e velocidades médias para demonstrar o funcionamento geral da missão.
+
+### Aproximação final
+
+Depois de aproximadamente **259 dias** em uma Transferência de Hohmann idealizada, a nave alcançaria a região da órbita de Marte. Nesse momento, surge um último problema matemático e físico: **a velocidade relativa**.
+
+A nave precisa chegar **ao lugar correto + no momento correto + na direção correta + com velocidade adequada**.
+
+Se estiver rápida demais em relação ao planeta, não será capturada pela gravidade marciana. Por isso, motores e, posteriormente, técnicas de desaceleração atmosférica podem ser empregados para permitir a entrada em órbita ou o pouso.`,
         imagem: "",
         legenda: "",
         fonte: ""
@@ -866,6 +1105,13 @@ O planejamento matemático procura encontrar um equilíbrio entre **segurança, 
       { titulo: "NASA/JPL Education — Calculating Launch Windows", url: "https://www.jpl.nasa.gov/edu/resources/lesson-plan/lets-go-to-mars-calculating-launch-windows/" },
       { titulo: "NASA/JPL — Curiosity Rover on Track for Landing", url: "https://www.jpl.nasa.gov/news/curiosity-rover-on-track-for-early-august-landing/" },
       { titulo: "NASA — Orion Reference Guide", url: "https://www.nasa.gov/reference/orion-spacecraft/" },
+      { titulo: "NASA — Meet NASA’s Orion Spacecraft", url: "https://www.nasa.gov/missions/meet-nasas-orion-spacecraft/" },
+      { titulo: "NASA — Orion Crew Module", url: "https://www.nasa.gov/reference/crew-module/" },
+      { titulo: "NASA — European Service Module", url: "https://www.nasa.gov/reference/european-service-module/" },
+      { titulo: "ESA — Orion European Service Module", url: "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Orion/European_Service_Module" },
+      { titulo: "ESA — European Service Module Propulsion", url: "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Orion/European_Service_Module_Propulsion" },
+      { titulo: "ESA — European Service Module Air and Water", url: "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Orion/European_Service_Module_Air_and_water" },
+      { titulo: "NASA — Orion Avionics and Software", url: "https://www.nasa.gov/reference/avionics-and-software/" },
       { titulo: "SpaceX — Starship", url: "https://www.spacex.com/vehicles/starship/" }
     ]
   },
@@ -1094,42 +1340,296 @@ Esse reaproveitamento reduziria drasticamente a dependência de suprimentos envi
     topicos: [
       {
         titulo: "As Primeiras Microvidas",
-        texto: `[COLE AQUI O TEXTO SOBRE AS PRIMEIRAS MICROVIDAS.]`,
-        imagem: "",
-        legenda: "",
-        fonte: ""
+        texto: `Antes da introdução de organismos vivos, seria necessário tornar o ambiente marciano menos hostil.
+
+Há bilhões de anos, Marte possuía uma atmosfera mais espessa e condições diferentes das atuais. Com o resfriamento do interior do planeta e a perda de seu campo magnético global, a atmosfera ficou mais exposta ao vento solar, contribuindo para sua perda gradual.
+
+### Proteção da atmosfera
+
+Uma proposta teórica para favorecer uma futura atmosfera mais densa seria a criação de um **escudo magnético artificial** próximo ao ponto de Lagrange L1 Marte–Sol, reduzindo a ação direta do vento solar sobre a atmosfera marciana.
+
+Esse sistema não produziria gases por si só, mas poderia ajudar a diminuir sua perda enquanto outros processos aumentassem gradualmente a quantidade de gases. Ainda assim, estudos indicam que o CO₂ atualmente acessível em Marte não seria suficiente para uma terraformação global significativa com a tecnologia atual.
+
+### Disponibilidade de água
+
+A água seria essencial para qualquer tentativa de formação de uma biosfera. Parte dela poderia ser obtida de depósitos de gelo existentes em Marte. O aquecimento controlado permitiria derreter ou sublimar parte desse gelo para posterior captura e utilização.
+
+Outra possibilidade seria produzir água através da **Reação de Sabatier**:
+
+**CO₂ + 4 H₂ → CH₄ + 2 H₂O**
+
+A água produzida poderia participar dos sistemas biológicos e industriais da colônia.
+
+### Introdução das primeiras formas de vida
+
+Depois de garantir água líquida, temperatura controlada e proteção adequada contra radiação, poderiam ser estudados organismos microscópicos capazes de sobreviver em condições extremas:
+
+- arqueias;
+- bactérias anaeróbias;
+- cianobactérias;
+- organismos fotossintetizantes microscópicos.
+
+Eles não seriam liberados diretamente na superfície atual de Marte. Inicialmente, precisariam viver em **ambientes controlados ou parcialmente protegidos**, como biorreatores, estufas, cavidades rochosas ou estruturas capazes de manter pressão, temperatura e água adequadas.
+
+### Proteção em rochas
+
+Alguns microrganismos terrestres conseguem viver dentro ou abaixo da superfície de rochas. Esses microambientes oferecem:
+
+- proteção parcial contra radiação ultravioleta;
+- maior retenção de umidade;
+- menor variação de temperatura;
+- passagem limitada de luz para determinados organismos fotossintetizantes.
+
+### Organismos de interesse
+
+**Prochlorococcus** é uma cianobactéria marinha fotossintetizante. Em um sistema artificial adequado, organismos desse tipo poderiam contribuir para estudos de produção biológica de oxigênio.
+
+**Synechococcus** é um gênero de cianobactérias que realiza fotossíntese e participa da fixação de carbono, ajudando a estudar ciclos de carbono em ecossistemas artificiais.
+
+**Trichodesmium** realiza fotossíntese e fixa nitrogênio atmosférico, mas sua utilização dependeria de ambientes aquáticos controlados semelhantes aos seus habitats marinhos naturais.
+
+**Gephyrocapsa huxleyi**, anteriormente chamada *Emiliania huxleyi*, é um fitoplâncton marinho que participa dos ciclos de carbono e enxofre e produz estruturas de carbonato de cálcio. Também seria mais adequada a sistemas aquáticos artificiais.
+
+**Chroococcidiopsis** é uma das cianobactérias mais interessantes para pesquisas relacionadas a Marte devido à resistência à dessecação, à radiação e a condições extremas. Além de produzir oxigênio, poderia participar de **biomineralização e intemperismo biológico**, ajudando lentamente a transformar um substrato mineral em material biologicamente mais ativo.`,
+        imagem: "https://www.frontiersin.org/files/Articles/1150224/fmicb-14-1150224-HTML/image_m/fmicb-14-1150224-g001.jpg",
+        legenda: "Amostras secas de Chroococcidiopsis foram expostas a condições espaciais e semelhantes às de Marte no experimento EXPOSE-R2. Crédito: Roscosmos/ESA; figura publicada em Frontiers in Microbiology.",
+        fonte: "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1150224/full"
       },
       {
         titulo: "Bactérias Como Redutoras de Óxido de Ferro",
-        texto: `[COLE AQUI O TEXTO SOBRE BACTÉRIAS COMO REDUTORAS DE ÓXIDO DE FERRO.]`,
+        texto: `Depois do estabelecimento das primeiras comunidades microbianas, um dos próximos objetivos seria modificar gradualmente as características químicas do regolito.
+
+Marte possui grandes quantidades de minerais ricos em ferro oxidado, responsáveis por sua coloração avermelhada. O ferro é essencial para os seres vivos, mas sua disponibilidade para plantas e microrganismos depende da forma química em que se encontra.
+
+### Bactérias redutoras de ferro
+
+Certas bactérias utilizam compostos de ferro em seu metabolismo.
+
+**Geobacter metallireducens** consegue utilizar ferro oxidado em processos respiratórios anaeróbios.
+
+**Shewanella oneidensis** também consegue reduzir compostos de ferro e outros metais durante seu metabolismo.
+
+Esses microrganismos convertem formas oxidadas de ferro, como **Fe³⁺**, em formas mais reduzidas, como **Fe²⁺**.
+
+### Possível aplicação
+
+Em um ambiente marciano controlado, bactérias desse tipo poderiam participar de:
+
+- transformação de minerais;
+- disponibilização de ferro;
+- alteração química do substrato;
+- ciclagem de elementos;
+- formação gradual de material mais favorável a outros organismos.
+
+O objetivo não seria simplesmente “eliminar o óxido de ferro”, mas criar um **ciclo biogeoquímico do ferro**, semelhante aos processos naturais dos ecossistemas terrestres.
+
+Essas bactérias exigiriam água, temperatura, nutrientes e proteção adequados. Portanto, sua aplicação seria estudada em sistemas controlados, e não pela liberação direta na superfície marciana atual.`,
         imagem: "",
         legenda: "",
         fonte: ""
       },
       {
         titulo: "Nitrogenação e Preparação do Solo",
-        texto: `[COLE AQUI O TEXTO SOBRE NITROGENAÇÃO E PREPARAÇÃO DO SOLO.]`,
+        texto: `Depois da transformação inicial dos minerais, seria necessário construir um sistema capaz de fornecer matéria orgânica e nutrientes.
+
+O regolito marciano, em seu estado natural, não corresponde a um solo agrícola terrestre. Ele possui minerais, mas praticamente não contém matéria orgânica produzida por organismos. Por isso, seria necessário criar gradualmente um **substrato biologicamente ativo**.
+
+### Adição de matéria orgânica
+
+Resíduos produzidos pela própria colônia poderiam ser tratados e reaproveitados como fonte de nutrientes:
+
+- resíduos vegetais;
+- restos de alimentos;
+- matéria orgânica decomposta;
+- resíduos humanos previamente tratados;
+- compostos produzidos por sistemas de compostagem.
+
+Esses materiais fornecem carbono, nitrogênio, fósforo, potássio, cálcio e outros minerais. Resíduos humanos não poderiam ser aplicados diretamente sem tratamento devido ao risco de patógenos, fármacos e outros contaminantes.
+
+### Ciclo do nitrogênio
+
+O nitrogênio é fundamental para aminoácidos, proteínas, ácidos nucleicos e clorofila. Para criar um ecossistema funcional, diferentes etapas do **ciclo do nitrogênio** precisariam ocorrer de maneira controlada.
+
+### Fixação do nitrogênio
+
+A fixação transforma nitrogênio molecular em compostos que entram nos ciclos biológicos. Algumas espécies de **Azotobacter** e **Clostridium** conseguem fixar nitrogênio sem depender diretamente de uma planta hospedeira, mas o processo depende de condições como carbono disponível, oxigênio, nutrientes e temperatura.
+
+### Amonificação
+
+Na amonificação, decompositores transformam compostos nitrogenados da matéria orgânica em formas amoniacais. Entre os gêneros envolvidos estão **Bacillus**, **Pseudomonas** e **Clostridium**.
+
+### Nitritação e nitratação
+
+Na nitritação, microrganismos como **Nitrosomonas**, **Nitrosococcus** e **Nitrosovibrio** oxidam amônia e formam nitrito.
+
+Depois, **Nitrobacter** e **Nitrospira** participam da conversão do nitrito em nitrato, que pode ser absorvido por muitas plantas. A microbiologia atual mostra que algumas *Nitrospira* conseguem realizar a nitrificação completa.
+
+### Desnitrificação
+
+A desnitrificação transforma compostos nitrogenados em gases e devolve parte do nitrogênio à atmosfera. Entre os grupos envolvidos estão **Pseudomonas**, **Paracoccus**, **Alcaligenes** e **Thiobacillus**.
+
+Esse processo precisaria ser limitado: uma desnitrificação excessiva retiraria do substrato parte do nitrogênio que deveria permanecer disponível às plantas.
+
+### Formação de um ciclo fechado
+
+Em vez de adicionar nutrientes indefinidamente, a colônia precisaria estabelecer o ciclo:
+
+**resíduos → decomposição → nutrientes → plantas → alimentos → novos resíduos → decomposição.**
+
+Esse reaproveitamento seria fundamental para manter a fertilidade durante longos períodos.`,
         imagem: "",
         legenda: "",
         fonte: ""
       },
       {
         titulo: "Primeiras Vidas Pluricelulares",
-        texto: `[COLE AQUI O TEXTO SOBRE AS PRIMEIRAS VIDAS PLURICELULARES.]`,
+        texto: `Depois de uma comunidade microbiana relativamente estável, poderiam ser introduzidos organismos pioneiros multicelulares capazes de contribuir para a formação de matéria orgânica e a modificação do substrato, principalmente **líquens e briófitas**.
+
+### Líquens
+
+Os líquens são associações simbióticas formadas principalmente por um fungo associado a uma alga ou cianobactéria. Eles conseguem colonizar ambientes pobres em nutrientes e superfícies rochosas.
+
+Ao crescer sobre rochas, podem contribuir para o **intemperismo químico e físico**, liberando lentamente minerais. Após a morte, sua biomassa acrescentaria matéria orgânica ao sistema. Alguns líquens também possuem cianobactérias capazes de fixar nitrogênio.
+
+Experimentos demonstraram resistência de *Xanthoria elegans* e *Rhizocarpon geographicum* a condições espaciais ou simuladas de Marte. Os gêneros abaixo permanecem no projeto por suas propriedades ecológicas na Terra, mas **não foram individualmente comprovados como sobreviventes de Marte**.
+
+**Collema** possui talo que pode adquirir aspecto gelatinoso quando hidratado e, em várias espécies, associação com cianobactérias fixadoras de nitrogênio.
+
+**Leptogium** apresenta características semelhantes e uma estrutura externa que pode proporcionar proteção adicional.
+
+**Peltigera** inclui espécies associadas a cianobactérias e capazes de contribuir significativamente para a fixação de nitrogênio.
+
+**Lobaria pulmonaria** pode combinar um fungo, uma alga verde e cianobactérias, realizando fotossíntese e, em determinadas condições, fixação de nitrogênio.
+
+### Briófitas
+
+As briófitas são pequenas plantas sem vasos condutores verdadeiros. Elas podem ajudar na retenção de água, na formação de matéria orgânica e na estabilização de superfícies.
+
+**Sphagnum** apresenta enorme capacidade de retenção de água na Terra. No projeto, essa característica inspira sistemas de retenção de umidade em ecossistemas controlados; não significa que formaria turfeiras na superfície marciana.
+
+**Polytrichum** forma estruturas densas e pode ajudar a reter umidade e estabilizar o substrato.
+
+### Papel na sucessão ecológica
+
+Esses organismos poderiam:
+
+- aumentar a matéria orgânica;
+- reter umidade;
+- alterar minerais;
+- estabilizar o substrato;
+- contribuir para ciclos de carbono e nitrogênio;
+- criar microambientes para outros organismos.
+
+Mesmo os candidatos mais resistentes precisariam ser estudados inicialmente em ambientes protegidos e controlados.`,
         imagem: "",
         legenda: "",
         fonte: ""
       },
       {
         titulo: "População de Plantas e Animais",
-        texto: `[COLE AQUI O TEXTO SOBRE A POPULAÇÃO DE PLANTAS E ANIMAIS.]`,
-        imagem: "",
-        legenda: "",
-        fonte: ""
+        texto: `Depois da formação de um substrato mais fértil e de ciclos biológicos relativamente estáveis, poderiam ser introduzidas plantas maiores. Inicialmente, seriam priorizadas espécies resistentes, capazes de produzir bastante biomassa e tolerar baixa fertilidade.
+
+Todas dependeriam de **estufas pressurizadas e ambientes controlados**. As características descritas são úteis na Terra, mas essas espécies ainda não foram validadas para um ecossistema marciano aberto.
+
+### Plantas pioneiras
+
+**Feijão-de-porco — Canavalia ensiformis:** produz grande quantidade de biomassa, possui raízes profundas e pode estabelecer associações com bactérias fixadoras de nitrogênio.
+
+**Crotalária — Crotalaria spp.:** cresce rapidamente, produz biomassa e participa de associações fixadoras de nitrogênio.
+
+**Guandu — Cajanus cajan:** é resistente à seca, possui raízes profundas e pode contribuir para o enriquecimento biológico do substrato.
+
+**Macaxeira — Manihot esculenta:** tolera relativamente bem seca e solos de baixa fertilidade, produzindo raízes ricas em carboidratos.
+
+**Batata-doce — Ipomoea batatas:** apresenta crescimento rápido, produz alimento e consegue cobrir grandes áreas de substrato.
+
+**Ora-pro-nóbis — Pereskia aculeata:** é uma planta comestível rústica, com folhas ricas em nutrientes.
+
+**Alecrim e lavanda:** podem permanecer como exemplos secundários de plantas mediterrâneas adaptadas a condições relativamente secas, sem serem tratadas como candidatas especialmente comprovadas para Marte.
+
+### Introdução de animais do solo
+
+Quando a produção vegetal e a matéria orgânica fossem suficientes, pequenos animais poderiam ser adicionados aos ecossistemas controlados para auxiliar na decomposição, aeração, mistura da matéria orgânica e ciclagem de nutrientes.
+
+### Minhocas
+
+**Eisenia fetida** é amplamente utilizada em vermicompostagem e transforma resíduos orgânicos em material rico em nutrientes.
+
+**Lumbricus terrestris** escava galerias e modifica a estrutura física do solo.
+
+**Eudrilus eugeniae** também é utilizada em vermicompostagem, especialmente em regiões tropicais.
+
+### Artrópodes
+
+Alguns artrópodes poderiam futuramente exercer funções ecológicas em sistemas rigorosamente controlados.
+
+**Formigas predadoras e dispersoras de sementes** transportam restos orgânicos e alteram a distribuição de nutrientes ao redor dos ninhos.
+
+**Formigas cortadeiras — Atta e Acromyrmex** levam matéria vegetal para ninhos onde cultivam fungos; seus resíduos enriquecem regiões localizadas do solo.
+
+**Formigas colhedoras — Pogonomyrmex e Messor** armazenam sementes e materiais vegetais, e parte desses resíduos pode criar áreas mais ricas em matéria orgânica.
+
+### Formação de um ecossistema
+
+A sequência conceitual seria:
+
+**microrganismos → decompositores → líquens e briófitas → plantas → pequenos animais → comunidades biológicas mais complexas.**
+
+Esse processo se aproxima do conceito de **sucessão ecológica**, no qual espécies pioneiras modificam o ambiente e criam condições para organismos mais exigentes.
+
+### Biotecnologia
+
+Entre as diferentes áreas da biotecnologia, o projeto dará destaque à **biotecnologia verde**, ligada à agricultura, e à **biotecnologia vermelha**, relacionada à saúde e à medicina.
+
+A biotecnologia verde poderia selecionar ou desenvolver plantas com maior resistência à seca, crescimento rápido, eficiência no uso de nutrientes e maior produtividade. A biotecnologia vermelha poderia auxiliar a medicina e os cuidados humanos nas condições de uma colônia espacial.
+
+Essas tecnologias não substituiriam os sistemas de suporte ambiental, mas ajudariam a selecionar organismos mais apropriados para ecossistemas artificiais fora da Terra.`,
+        imagem: "https://www.nasa.gov/wp-content/uploads/2023/02/Veggie-Chamber-2.jpg?w=1024",
+        legenda: "Plantas recebendo água e nutrientes em uma câmara que simula o sistema Veggie da Estação Espacial Internacional. Crédito: NASA/Cory Huston.",
+        fonte: "https://www.nasa.gov/exploration-research-and-technology/growing-plants-in-space/"
       }
     ],
     referencias: [
-      "[ADICIONE AQUI AS REFERÊNCIAS DE BIOLOGIA]"
+      { titulo: "NASA — MAVEN Reveals Most of Mars’ Atmosphere Was Lost to Space", url: "https://www.nasa.gov/news-release/nasas-maven-reveals-most-of-mars-atmosphere-was-lost-to-space/" },
+      { titulo: "Green et al. — A Future Mars Environment for Science and Exploration", url: "https://ntrs.nasa.gov/search.jsp?R=20170011516" },
+      { titulo: "Jakosky e Edwards — Inventory of CO₂ Available for Terraforming Mars", url: "https://www.nature.com/articles/s41550-018-0529-6" },
+      { titulo: "NASA/JPL-Caltech — SWIM Map Shows Subsurface Water Ice on Mars", url: "https://science.nasa.gov/resource/swim-map-shows-subsurface-water-ice-on-mars/" },
+      { titulo: "NASA/AIAA — Mars ISRU Chemical Processes", url: "https://ntrs.nasa.gov/api/citations/20120003147/downloads/20120003147.pdf" },
+      { titulo: "Dufresne et al. — Genome of Prochlorococcus marinus SS120", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC187748/" },
+      { titulo: "Durall e Lindblad — Carbon Fixation in Cyanobacteria", url: "https://www.sciencedirect.com/science/article/abs/pii/S221192641530014X" },
+      { titulo: "Bergman et al. — Trichodesmium and Nitrogen Fixation", url: "https://academic.oup.com/femsre/article/37/3/286/583761" },
+      { titulo: "Wheeler, Sturm e Langer — Gephyrocapsa huxleyi as a Model System", url: "https://onlinelibrary.wiley.com/doi/10.1111/jpy.13404" },
+      { titulo: "Cockell et al. — Simulated Martian UV Flux on Chroococcidiopsis", url: "https://doi.org/10.1089/ast.2005.5.127" },
+      { titulo: "Billi et al. — Desert Cyanobacterium under Mars-like Conditions", url: "https://pubmed.ncbi.nlm.nih.gov/30742497/" },
+      { titulo: "NASA — ISS Tests Chroococcidiopsis under Mars-like Conditions", url: "https://www.nasa.gov/missions/station/iss-research/exposed-international-space-station-tests-organisms-materials-in-space/" },
+      { titulo: "Lovley et al. — Geobacter metallireducens and Iron Reduction", url: "https://pubmed.ncbi.nlm.nih.gov/8387263/" },
+      { titulo: "Shi et al. — Fe(III) Oxide Reduction by Shewanella oneidensis", url: "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2012.00050/full" },
+      { titulo: "Fackrell et al. — Plants and Microbes in Regolith-Based Agriculture", url: "https://doi.org/10.1038/s44264-024-00013-5" },
+      { titulo: "Van den Broek et al. — Human Excreta-Derived Fertilizers", url: "https://doi.org/10.1016/j.scitotenv.2024.177306" },
+      { titulo: "Reed, Cleveland e Townsend — Free-Living Nitrogen Fixation", url: "https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-102710-145034" },
+      { titulo: "Smercina et al. — Controls on Free-Living Nitrogen Fixation", url: "https://journals.asm.org/doi/10.1128/AEM.02546-18" },
+      { titulo: "Arp, Sayavedra-Soto e Hommes — Ammonia Oxidation by Nitrosomonas", url: "https://doi.org/10.1007/s00203-002-0452-0" },
+      { titulo: "Daims et al. — Complete Nitrification by Nitrospira", url: "https://doi.org/10.1038/nature16461" },
+      { titulo: "Betlach — Bacterial Denitrification and Denitrifier Diversity", url: "https://doi.org/10.1007/BF00399543" },
+      { titulo: "De Vera et al. — Lichens under Mars-like Conditions", url: "https://pubmed.ncbi.nlm.nih.gov/20402583/" },
+      { titulo: "Sancho et al. — Lichens Survive in Space", url: "https://pubmed.ncbi.nlm.nih.gov/17630840/" },
+      { titulo: "Oliveira e Maciel-Silva — Biological Soil Crusts on Other Worlds", url: "https://pubmed.ncbi.nlm.nih.gov/35522077/" },
+      { titulo: "Keane et al. — Drought Effects on Sphagnum", url: "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70361" },
+      { titulo: "Poulet et al. — Large-Scale Crop Production for the Moon and Mars", url: "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.733944/full" },
+      { titulo: "Fischler, Wortmann e Feil — Soil-Improving Legumes", url: "https://www.sciencedirect.com/science/article/abs/pii/S0378429000001131" },
+      { titulo: "Perin et al. — Biomassa e Fixação de Nitrogênio por Adubos Verdes", url: "https://www.scielo.br/j/pab/a/hF8p3kDYvvxgcnXtKDmMBSf/?lang=pt" },
+      { titulo: "Review — Nitrogen-Fixing Forage Legumes in Eastern Africa", url: "https://link.springer.com/article/10.1007/s44274-026-00694-4" },
+      { titulo: "El-Sharkawy — Cassava Biology and Physiology", url: "https://pubmed.ncbi.nlm.nih.gov/15669146/" },
+      { titulo: "Motsa, Modi e Mabhaudhi — Sweet Potato as a Drought-Tolerant Crop", url: "https://www.scielo.org.za/scielo.php?pid=S0038-23532015000600011&script=sci_arttext" },
+      { titulo: "Silva et al. — Pereskia aculeata as a Novel Food Source", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10252557/" },
+      { titulo: "Görres, Savin e Amador — Soil Structure in Lumbricus terrestris Burrows", url: "https://www.sciencedirect.com/science/article/pii/S0038071701000682" },
+      { titulo: "Review — Vermicomposting of Organic and Inorganic Waste", url: "https://www.sciencedirect.com/science/article/pii/S2589014X23000038" },
+      { titulo: "Wagner, Brown e Gordon — Harvester Ant Nests and Soil Chemistry", url: "https://pubmed.ncbi.nlm.nih.gov/28307575/" },
+      { titulo: "Verchot, Moutinho e Davidson — Leaf-Cutting Ants and Nutrient Cycling", url: "https://www.sciencedirect.com/science/article/abs/pii/S0038071703001834" },
+      { titulo: "Effects of Ant Species on Soil Nutrients and Seedling Recruitment", url: "https://www.sciencedirect.com/science/article/pii/S0085562618301985" },
+      { titulo: "Barcelos et al. — The Colors of Biotechnology", url: "https://academic.oup.com/femsle/article/365/21/fny239/5106815" },
+      { titulo: "Liu et al. — Biotechnological Development of Plants for Space Agriculture", url: "https://www.nature.com/articles/s41467-021-26238-3" },
+      { titulo: "NASA — Growing Plants in Space", url: "https://www.nasa.gov/exploration-research-and-technology/growing-plants-in-space/" }
     ]
   }
 ];
